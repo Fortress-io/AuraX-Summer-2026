@@ -1,4 +1,3 @@
-// Step 2: Write the logic to get the computer choice (No arrays used)
 function getComputerChoice() {
   let randomNumber = Math.random();
   if (randomNumber >= 0 && randomNumber < 1 / 3) {
@@ -10,20 +9,16 @@ function getComputerChoice() {
   }
 }
 
-// Step 3: Write the logic to get the human choice
 function getHumanChoice() {
   return prompt("Enter rock, paper, or scissors:");
 }
 
-// Step 6: Write the logic to play the entire game
 function playGame() {
-  // Step 4: Declare the players score variables (Moved inside playGame per Step 6)
   let humanScore = 0;
   let computerScore = 0;
 
-  // Step 5: Write the logic to play a single round (Moved inside playGame per Step 6)
   function playRound(humanChoice, computerChoice) {
-    // Make human choice case-insensitive
+
     let humanLower = humanChoice.toLowerCase();
 
     if (humanLower === computerChoice) {
@@ -41,7 +36,6 @@ function playGame() {
     }
   }
 
-  // Play 5 rounds using a loop
   for (let i = 0; i < 5; i++) {
     console.log(`--- Round ${i + 1} ---`);
     const humanSelection = getHumanChoice();
@@ -49,7 +43,6 @@ function playGame() {
     playRound(humanSelection, computerSelection);
   }
 
-  // Announce the final winner
   console.log("--- Game Over ---");
   console.log(`Final Score -> You: ${humanScore} | Computer: ${computerScore}`);
   
@@ -62,5 +55,5 @@ function playGame() {
   }
 }
 
-// Call the game to start it
+
 playGame();
