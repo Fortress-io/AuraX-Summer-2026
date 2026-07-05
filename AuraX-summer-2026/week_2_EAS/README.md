@@ -40,9 +40,9 @@ This project helped me practice:
 
 - Add grid resizing feature
 - Add rainbow/random color mode
-- Add eraser tool
-- Add touch support for mobile devices
-- Improve UI design and layout
+- Add eraser tool.
+- Add touch support for mobile devices.
+- Improve UI design and layout.
 
 ## Author
 
