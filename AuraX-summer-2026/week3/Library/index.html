@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Library</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>My Library</h1>
+    <button id="new-book-btn">+ New Book</button>
+  </header>
+
+  <main id="library" class="library">
+    <!-- book cards get rendered here by JS -->
+  </main>
+
+  <p id="empty-message" class="empty-message hidden">
+    Your library is empty. Add a book to get started!
+  </p>
+
+  <!-- Modal form for adding a new book -->
+  <dialog id="book-dialog" class="book-dialog">
+    <form id="book-form" method="dialog">
+      <h2>New Book</h2>
+
+      <label for="title">Title</label>
+      <input type="text" id="title" name="title" required />
+
+      <label for="author">Author</label>
+      <input type="text" id="author" name="author" required />
+
+      <label for="pages">Pages</label>
+      <input type="number" id="pages" name="pages" min="1" required />
+
+      <div class="checkbox-row">
+        <input type="checkbox" id="read" name="read" />
+        <label for="read">Already read</label>
+      </div>
+
+      <div class="dialog-buttons">
+        <button type="button" id="cancel-btn">Cancel</button>
+        <button type="submit" id="submit-btn">Add Book</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
