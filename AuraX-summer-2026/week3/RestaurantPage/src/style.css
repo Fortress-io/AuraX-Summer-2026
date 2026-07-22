@@ -98,6 +98,8 @@ nav button:hover {
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   transition: 0.3s;
+  max-width: 350px;
+  max-height: 400px;
 }
 
 .menu-card:hover {
@@ -108,7 +110,7 @@ nav button:hover {
 
 .menu-card img {
   width: 100%;
-  height: 180px;
+  height: 150px;
   object-fit: cover;
 }
 
