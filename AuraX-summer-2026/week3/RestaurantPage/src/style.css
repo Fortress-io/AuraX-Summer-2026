@@ -84,12 +84,15 @@ nav button:hover {
 }
 
 .menu {
-  display: grid;
-  grid-template-columns: 2fr 2fr;
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
   margin-top: 50px;
   gap: 25px;
   width: min(1100px, 90%);
   margin: 40px auto;
+  
 }
 
 .menu-card {
@@ -98,7 +101,7 @@ nav button:hover {
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   transition: 0.3s;
-  max-height: 300px;
+  height: auto;
 }
 
 .menu-card:hover {
@@ -168,18 +171,20 @@ footer {
     .card {
         width: 90%;
         margin: 0 auto;
+        max-height: 300px;
+        padding: 10px;
     }
 
     .card img {
-        height: 180px;
+        height: 130px;
         object-fit: cover;
     }
 
     .card h2 {
-        font-size: 1.2rem;
+        font-size: 0.8rem;
     }
 
     .card p {
-        font-size: 0.9rem;
+        font-size: 0.75rem;
     }
 }
