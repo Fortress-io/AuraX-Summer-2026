@@ -4,7 +4,7 @@ A modern restaurant website built with vanilla JavaScript and Webpack.
 
 ## 🚀 Live Demo
 
-(Add GitHub Pages link here)
+[https://Fortress-io.github.io/AuraX-Summer-2026]
 
 ## 📌 Features
 
