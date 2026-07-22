@@ -165,21 +165,21 @@ footer {
   border-bottom: 2px solid #f4c542;
 }
 @media (max-width: 600px) {
-    .card {
-        width: 90%;
-        margin: 0 auto;
-    }
+  .card {
+    width: 90%;
+    margin: 0 auto;
+  }
 
-    .card img {
-        height: 180px;
-        object-fit: cover;
-    }
+  .card img {
+    height: 180px;
+    object-fit: cover;
+  }
 
-    .card h2 {
-        font-size: 1.2rem;
-    }
+  .card h2 {
+    font-size: 1.2rem;
+  }
 
-    .card p {
-        font-size: 0.9rem;
-    }
+  .card p {
+    font-size: 0.9rem;
+  }
 }
