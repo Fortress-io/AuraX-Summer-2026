@@ -1,4 +1,4 @@
-import heroImage from "./images/hero.jpg";
+import heroImage from "./images/hero.png";
 
 export default function loadHome() {
   const home = document.createElement("div");
@@ -22,7 +22,7 @@ export default function loadHome() {
   const button = document.createElement("button");
   button.textContent = "Explore Menu";
   button.classList.add("hero-btn");
-
+  button.id = "explore-menu-btn";
   home.append(hero, title, slogan, description, button);
 
   return home;
