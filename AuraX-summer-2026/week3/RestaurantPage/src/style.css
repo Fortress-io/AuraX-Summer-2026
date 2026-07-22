@@ -85,7 +85,7 @@ nav button:hover {
 
 .menu {
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-columns: 2fr 2fr;
   margin-top: 50px;
   gap: 25px;
   width: min(1100px, 90%);
