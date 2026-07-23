@@ -85,11 +85,11 @@ nav button:hover {
 
 .menu {
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr;
-
-  gap: 25px;
-  width: min(1100px, 90%);
-  margin: 40px auto;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 2rem;
 }
 
 .menu-card {
@@ -98,8 +98,8 @@ nav button:hover {
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   transition: 0.3s;
-  height: auto;
-  width: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu-card:hover {
@@ -132,6 +132,25 @@ nav button:hover {
 .menu-card img {
   object-fit: cover;
 }
+
+/* Phone */
+@media (max-width: 600px) {
+  .menu {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .card img {
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
 .contact {
   width: min(700px, 90%);
   margin: 60px auto;

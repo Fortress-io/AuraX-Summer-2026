@@ -6,10 +6,10 @@ export default function loadContact() {
   title.textContent = "Contact Us";
 
   const phone = document.createElement("p");
-  phone.textContent = "📞 +251 900 000 000";
+  phone.textContent = "📞 +251 995109144";
 
   const email = document.createElement("p");
-  email.textContent = "📧 info@dejusrestaurant.com";
+  email.textContent = "📧 info@tgrestaurant.com";
 
   const address = document.createElement("p");
   address.textContent = "📍 Adigrat, Ethiopia";

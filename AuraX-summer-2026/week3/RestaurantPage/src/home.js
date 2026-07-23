@@ -10,7 +10,7 @@ export default function loadHome() {
   hero.classList.add("hero");
 
   const title = document.createElement("h1");
-  title.textContent = "Deju's Restaurant";
+  title.textContent = "The GOAT Restaurant";
 
   const slogan = document.createElement("h2");
   slogan.textContent = "Where Every Bite Tells a Story";
