@@ -86,20 +86,18 @@ nav button:hover {
 .menu {
   display: grid;
   grid-template-columns: 2fr 2fr 2fr;
- 
+
   gap: 25px;
   width: min(1100px, 90%);
   margin: 40px auto;
 }
 
-
-
 .menu-card {
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-    transition: 0.3s;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
 }
 
 .menu-card:hover {
@@ -122,49 +120,47 @@ nav button:hover {
   padding: 0 15px;
 }
 
-
 .menu-card span {
-    display: block;
-    padding: 15px;
-    font-weight: bold;
-    color: #d97706;
+  display: block;
+  padding: 15px;
+  font-weight: bold;
+  color: #d97706;
 }
 
 .menu-card img {
   object-fit: cover;
 }
-.contact{
-    width:min(700px,90%);
-    margin:60px auto;
-    padding:40px;
-    text-align:center;
+.contact {
+  width: min(700px, 90%);
+  margin: 60px auto;
+  padding: 40px;
+  text-align: center;
 
-    background:white;
-    border-radius:15px;
-    box-shadow:0 10px 30px rgba(0,0,0,.15);
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
-.contact h1{
-    margin-bottom:30px;
+.contact h1 {
+  margin-bottom: 30px;
 }
 
-.contact p{
-    font-size:1.2rem;
-    margin:20px 0;
+.contact p {
+  font-size: 1.2rem;
+  margin: 20px 0;
 }
 
-footer{
-    width:100%;
-    padding:25px;
-    text-align:center;
+footer {
+  width: 100%;
+  padding: 25px;
+  text-align: center;
 
-    background:#222;
-    color:white;
+  background: #222;
+  color: white;
 
-    margin-top:50px;
+  margin-top: 50px;
 }
-.nav-btn.active{
-    color:#f4c542;
-    border-bottom:2px solid #f4c542;
+.nav-btn.active {
+  color: #f4c542;
+  border-bottom: 2px solid #f4c542;
 }
-
