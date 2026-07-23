@@ -86,20 +86,20 @@ nav button:hover {
 .menu {
   display: grid;
   grid-template-columns: 2fr 2fr 2fr;
-  margin-top: 50px;
+ 
   gap: 25px;
   width: min(1100px, 90%);
   margin: 40px auto;
 }
 
+
+
 .menu-card {
-  background: white;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-  transition: 0.3s;
-  max-width: 250px;
-  max-height: 300px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
 }
 
 .menu-card:hover {
@@ -115,18 +115,19 @@ nav button:hover {
 }
 
 .menu-card h2 {
-  padding: 15px;
+  padding: 13px;
 }
 
 .menu-card p {
   padding: 0 15px;
 }
 
+
 .menu-card span {
-  display: block;
-  padding: 15px;
-  font-weight: bold;
-  color: #d97706;
+    display: block;
+    padding: 15px;
+    font-weight: bold;
+    color: #d97706;
 }
 
 .menu-card img {
@@ -166,3 +167,4 @@ footer{
     color:#f4c542;
     border-bottom:2px solid #f4c542;
 }
+
