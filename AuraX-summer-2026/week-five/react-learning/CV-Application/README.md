@@ -2,8 +2,6 @@
 
 A CV builder application built with React.
 
-## Live Demo
-
 ## Built With
 
 - React
