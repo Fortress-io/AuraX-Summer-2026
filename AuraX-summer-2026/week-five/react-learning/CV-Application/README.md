@@ -81,4 +81,4 @@ git clone https://github.com/Fortress-io/AuraX-Summer-2026.git
 
 ## Developed By
 
-Dejen Mezgebe (Fortress-io)
+Dejen Mezgebe (Fortress-io).
