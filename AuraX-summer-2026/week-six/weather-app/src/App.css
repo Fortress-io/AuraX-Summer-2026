@@ -155,7 +155,7 @@ body {
   color: white;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   .dashboard-content {
     gap: 20px;
     padding: 10px;
@@ -189,24 +189,25 @@ body {
 
   .city {
     font-size: 1.2rem;
+    margin-top: 0px;
   }
 
   .temperature {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   .weather-icon {
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
   }
 
   .details p {
-    font-size: 0.55rem;
+    font-size: 0.35rem;
   }
 
   .footer {
     padding: 15px;
-    font-size: 0.45rem;
-    background-color: #515657;
+    font-size: 0.95rem;
+    background-color: #7d8182;
   }
 }
