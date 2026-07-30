@@ -1,0 +1,31 @@
+.error-card {
+  width: min(500px, 90%);
+  margin: 20px auto;
+  padding: 20px;
+
+  background: rgba(255, 80, 80, 0.15);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255, 80, 80, 0.4);
+  border-radius: 20px;
+
+  text-align: center;
+  color: white;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.error-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.4rem;
+}
+
+.error-card p {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.error-card small {
+  opacity: 0.85;
+}

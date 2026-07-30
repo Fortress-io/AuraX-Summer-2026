@@ -1,26 +1,33 @@
 import { useState } from "react";
 
-function Search({ onSearch }) {
+function Search({ onSearch, loading }) {
   const [input, setInput] = useState("");
-  
-function handleSubmit() {
-  const city = input.trim();
 
-  if (!city) return;
+  function handleSubmit() {
+    const city = input.trim();
 
-  onSearch(city);
-}
+    if (!city) return;
+
+    onSearch(city);
+  }
 
   return (
-    <div>
+    <div className="search">
       <input
         type="text"
-        placeholder="Enter city"
+        placeholder="Search Location..."
         value={input}
+        autoFocus
         onChange={(e) => setInput(e.target.value)}
+        onKeyDown={(e) => {
+          if (e.key === "Enter") {
+            handleSubmit();
+          }
+        }}
       />
-
-      <button onClick={handleSubmit}>Search</button>
+      <button onClick={handleSubmit} disabled={loading}>
+        {loading ? "Searching..." : "Search"}
+      </button>
     </div>
   );
 }

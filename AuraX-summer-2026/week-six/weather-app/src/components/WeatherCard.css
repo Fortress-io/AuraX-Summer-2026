@@ -1,0 +1,130 @@
+.weather-card {
+  background: rgba(255, 255, 255, 0.18);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border-radius: 24px;
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+  padding: 35px;
+  margin: 25px;
+  width: 900px;
+}
+
+.weather-card:hover {
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.2);
+}
+
+.details {
+  margin-top: 25px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 20px;
+}
+
+.details p {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+  font-size: 1rem;
+}
+
+.details p {
+  margin: 10px 0;
+}
+.temperature {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin: 20px 0;
+}
+
+.city,
+.description,
+.temperature,
+.details p {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.city {
+  color: black;
+  font-size: 4rem;
+  font-weight: 800;
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+.description {
+  color: aqua;
+  font-size: 35px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 800;
+  margin: 20px 20px;
+}
+
+.temperature {
+  color: white;
+  padding: 50px;
+  font-size: 5rem;
+}
+
+.details p {
+  color: white;
+  font-size: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 15px;
+}
+.city,
+.description,
+.temperature,
+.details p {
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.date {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.2rem;
+  margin: 6px 0 14px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.weather-icon {
+  width: 250px;
+  height: 200px;
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.weather-card {
+  animation: fadeInUp 0.8s ease;
+}

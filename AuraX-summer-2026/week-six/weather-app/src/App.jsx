@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import "./App.css";
 import Search from "./components/Search";
 import WeatherCard from "./components/WeatherCard";
 import Loading from "./components/Loading";
@@ -11,38 +11,63 @@ function App() {
   const [weather, setWeather] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const weatherType = weather?.weather[0].main.toLowerCase() || "";
 
-async function handleSearch(cityName) {
-  setCity(cityName);
+  async function handleSearch(cityName) {
+    setError("");
 
-  setLoading(true);
-  setError(null);
+    try {
+      setLoading(true);
 
-  try {
-    const data = await getWeather(cityName);
+      const data = await getWeather(cityName);
 
-    setWeather(data);
-  } catch (err) {
-    setError(err.message);
-    setWeather(null);
-  } finally {
-    setLoading(false);
+      setWeather(data);
+    } catch (error) {
+      setWeather(null); // Remove old weather too
+
+      setError(
+        error.message === "city not found"
+          ? "We couldn't find that city."
+          : "Something went wrong.",
+      );
+    } finally {
+      setLoading(false);
+    }
   }
-}
-
   return (
-    <div>
-      <h1>Weather App 🌦️</h1>
+    <div className="dashboard-content">
+      <main className={`dashboard ${weatherType}`}>
+        <section className="search-panel">
+          <h1>🌦Weather Pro</h1>
 
-      <Search onSearch={handleSearch} />
+          <Search onSearch={handleSearch} loading={loading} />
+        </section>
 
-      <p>Searching for: {city}</p>
+        <section className="weather-panel">
+          {loading && <Loading />}
 
-      <WeatherCard weather={weather} />
+          {!loading && error && <ErrorMessage message={error} />}
 
-      <Loading loading={loading} />
-
-      <ErrorMessage error={error} />
+          {!loading && weather && (
+            <WeatherCard
+              key={`${weather.id}-${weather.dt}`}
+              weather={weather}
+            />
+          )}
+        </section>
+      </main>
+      <footer className="footer">
+        <p>
+          Built with React & OpenWeather API • © 2026 Dejen M.{" "}
+          <a
+            href="https://github.com/Fortress-io"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Fortress-io
+          </a>
+        </p>
+      </footer>
     </div>
   );
 }
