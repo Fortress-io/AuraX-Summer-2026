@@ -34,6 +34,7 @@ body {
 }
 .search-panel {
   width: min(1200px, 55%);
+  height: min(500px, 50%);
   margin: 50px auto;
   display: flex;
   flex-direction: column;

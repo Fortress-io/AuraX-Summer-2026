@@ -1,6 +1,7 @@
 .weather-card {
   background: rgba(255, 255, 255, 0.18);
   width: min(1200px, 55%);
+  height: min(500px, 50%);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
 
