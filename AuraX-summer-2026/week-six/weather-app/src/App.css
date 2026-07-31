@@ -38,7 +38,6 @@ body {
   flex-direction: column;
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 24px;
   padding: 35px;
@@ -151,7 +150,7 @@ body {
 .footer strong {
   color: white;
 }
-/* 
+
 @media (max-width: 768px) {
   .dashboard-content {
     gap: 20px;
@@ -207,4 +206,4 @@ body {
   .date {
     font-size: 0.9rem;
   }
-} */
+}
