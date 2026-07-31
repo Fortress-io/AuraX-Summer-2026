@@ -133,7 +133,7 @@
   animation: fadeInUp 0.8s ease;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .weather-card {
     width: min(90%, 500px);
     padding: 15px;
@@ -159,4 +159,4 @@
     font-size: 1rem;
     margin: 8px;
   }
-}
+} */

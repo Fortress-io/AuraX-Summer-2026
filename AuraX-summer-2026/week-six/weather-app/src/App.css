@@ -156,7 +156,7 @@ body {
 .footer strong {
   color: white;
 }
-
+/* 
 @media (max-width: 768px) {
   .dashboard-content {
     gap: 20px;
@@ -212,4 +212,4 @@ body {
   .date {
     font-size: 0.9rem;
   }
-}
+} */
