@@ -177,6 +177,7 @@ body {
   .search {
     display: flex;
     flex-direction: row;
+    width: 100%;
     gap: 12px;
     align-items: center;
     justify-content: center;
@@ -190,6 +191,7 @@ body {
   .search button {
     padding: 8px 12px;
     font-size: 0.9rem;
+    width: 25%;
   }
   .search input::placeholder {
     font-size: 0.75rem;
