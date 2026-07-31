@@ -181,6 +181,7 @@ body {
     gap: 12px;
     align-items: center;
     justify-content: center;
+    height: 50px;
   }
 
   .search input {
@@ -191,7 +192,7 @@ body {
   .search button {
     padding: 8px 12px;
     font-size: 0.9rem;
-    width: min(150px, 30%);
+    width: min(175px, 30%);
   }
   .search input::placeholder {
     font-size: 0.75rem;
