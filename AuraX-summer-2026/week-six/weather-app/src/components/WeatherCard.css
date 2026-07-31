@@ -135,7 +135,7 @@
 
 @media (max-width: 768px) {
   .weather-card {
-    width: 90%;
+    width: min(90%, 500px);
     padding: 15px;
     border-radius: 15px;
     margin: 15px auto;

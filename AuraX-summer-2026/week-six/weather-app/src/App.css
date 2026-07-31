@@ -191,7 +191,7 @@ body {
   .search button {
     padding: 8px 12px;
     font-size: 0.9rem;
-    width: 25%;
+    width: min(150px, 30%);
   }
   .search input::placeholder {
     font-size: 0.75rem;
