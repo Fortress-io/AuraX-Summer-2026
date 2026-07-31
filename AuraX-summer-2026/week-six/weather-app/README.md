@@ -6,7 +6,7 @@ A modern and responsive weather application built with **React** and **Vite** th
 
 Live Website: https://weather-pro-sable.vercel.app/
 
-## 📸 Features
+##  Features
 
 - 🔍 Search weather by city name
 - 🌡 Display current temperature
