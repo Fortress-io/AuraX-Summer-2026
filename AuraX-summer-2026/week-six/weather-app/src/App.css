@@ -32,7 +32,7 @@ body {
   gap: 40px;
 }
 .search-panel {
-  width: min(1200px, 55%);
+  width: min(1200px, 75%);
   margin: 50px auto;
   display: flex;
   flex-direction: column;
@@ -78,6 +78,7 @@ body {
   cursor: pointer;
   height: 50px;
   font-size: 25px;
+  width: 100%;
 }
 .search-panel button:hover {
   background-color: #9876fc;
@@ -162,17 +163,19 @@ body {
   .search-panel {
     padding: 20px;
     margin: 20px auto;
+    width: min(1000px,95%);
   }
 
   .search-panel h1 {
     font-size: 1.5rem;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   }
 
   .search {
     display: flex;
     flex-direction: row;
-    width: min(1000px, 95%);
-    gap: 12px;
+    width: min(1000px, 100%);
+    gap: 10px;
     align-items: center;
     justify-content: center;
     height: 30px;
@@ -196,10 +199,12 @@ body {
     padding: 15px;
     font-size: 0.8rem;
     background-color: #7d8182;
-    margin-top: 20px;
+    margin-top: auto;
     font-family:
       "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
       Arial, sans-serif;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
   }
   .description,
   .location,
