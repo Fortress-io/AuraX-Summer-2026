@@ -1,16 +1,11 @@
 .weather-card {
   background: rgba(255, 255, 255, 0.18);
   width: min(1200px, 55%);
-
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
-
   border-radius: 24px;
-
   border: 1px solid rgba(255, 255, 255, 0.25);
-
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-
   padding: 25px;
   margin: 20px auto;
 }
@@ -25,28 +20,11 @@
   padding-top: 20px;
 }
 
-.details p {
-  display: flex;
-  justify-content: space-between;
-  margin: 12px 0;
-  font-size: 1rem;
-}
-
-.details p {
-  margin: 10px 0;
-}
 .temperature {
   font-size: 1.5rem;
   font-weight: bold;
   color: #1f2937;
   margin: 20px 0;
-}
-
-.city,
-.description,
-.temperature,
-.details p {
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .city {
@@ -58,7 +36,6 @@
   text-align: center;
   justify-content: center;
 }
-
 .description {
   color: aqua;
   font-size: 35px;
@@ -77,12 +54,19 @@
   font-weight: 900;
 }
 
+.details {
+  margin-top: 25px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 20px;
+}
 .details p {
   color: white;
   font-size: 30px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin: 15px;
+  justify-content: space-between;
 }
+
 .city,
 .description,
 .temperature,

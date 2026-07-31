@@ -7,7 +7,6 @@ import ErrorMessage from "./components/ErrorMessage";
 import { getWeather } from "./services/weatherAPI";
 
 function App() {
-  const [city, setCity] = useState("");
   const [weather, setWeather] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
