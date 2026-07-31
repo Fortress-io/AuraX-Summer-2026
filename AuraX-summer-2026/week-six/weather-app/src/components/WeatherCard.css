@@ -132,3 +132,30 @@
 .weather-card {
   animation: fadeInUp 0.8s ease;
 }
+
+@media (max-width: 768px) {
+  .weather-card {
+    width: 90%;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 15px auto;
+  }
+
+  .city {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1.5rem;
+  }
+
+  .temperature {
+    font-size: 3rem;
+    padding: 30px;
+  }
+
+  .details p {
+    font-size: 1rem;
+    margin: 8px;
+  }
+}

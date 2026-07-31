@@ -195,30 +195,6 @@ body {
     font-size: 0.75rem;
   }
 
-  .weather-card {
-    width: min(500px, 95%);
-    padding: 20px;
-    margin: 10px auto;
-    border-radius: 18px;
-  }
-  .city {
-    font-size: 1.2rem;
-  }
-
-  .temperature {
-    font-size: 2.5rem;
-  }
-
-  .weather-icon {
-    width: 60px;
-    height: 60px;
-  }
-
-  .details p {
-    font-size: 20px;
-    margin: 10px 0;
-  }
-
   .footer {
     padding: 15px;
     font-size: 0.8rem;
