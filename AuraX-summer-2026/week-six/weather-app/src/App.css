@@ -180,12 +180,12 @@ body {
   }
 
   .search input {
-    width: 80%;
-    font-size: 1rem;
+    flex: 1;
+    font-size: 0.75rem;
     font-family: monospace;
   }
   .search button {
-    width: 20%;
+    width: auto;
     height: 40px;
     font-size: 1rem;
   }
