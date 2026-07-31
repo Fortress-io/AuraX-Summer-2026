@@ -1,16 +1,116 @@
-# React + Vite
+# 🌦 Weather Pro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive weather application built with **React** and **Vite** that provides real-time weather information using the **OpenWeather API**.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Live Website: https://weather-pro-sable.vercel.app/
 
-## React Compiler
+## 📸 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🔍 Search weather by city name
+- 🌡 Display current temperature
+- 🌤 Dynamic weather icons
+- 🌍 Country flag display
+- 🎨 Dynamic backgrounds based on weather conditions
+- ⌨️ Press **Enter** to search
+- ⏳ Loading indicator while fetching data
+- ⚠️ Friendly error messages
+- 📱 Responsive design for desktop and mobile
+- ✨ Glassmorphism user interface
 
-## Expanding the ESLint configuration
+## 🛠️ Built With
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- JavaScript (ES6+)
+- CSS3
+- OpenWeather API
+
+## 📂 Folder Structure
+
+```text
+src/
+├── components/
+│   ├── Search.jsx
+│   ├── WeatherCard.jsx
+│   ├── Loading.jsx
+│   ├── ErrorMessage.jsx
+│   ├── Search.css
+│   ├── WeatherCard.css
+│   ├── Loading.css
+│   └── ErrorMessage.css
+│
+├── services/
+│   └── weatherAPI.js
+│
+├── App.jsx
+├── App.css
+├── main.jsx
+└── index.css
+```
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Fortress-io/AuraX-Summer-2026.git
+```
+
+Navigate to the project:
+
+```bash
+cd AuraX-summer-2026/week-six/weather-app
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Create a `.env` file in the project root:
+
+```env
+VITE_WEATHER_API_KEY=YOUR_API_KEY
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+## 📖 What I Learned
+
+This project helped me strengthen my understanding of:
+
+- React Components
+- Props
+- State Management (`useState`)
+- Conditional Rendering
+- Fetch API
+- Async/Await
+- Error Handling
+- Environment Variables
+- Responsive Design
+- Component-Based Architecture
+- API Integration
+- Deployment with Vercel
+
+## 👨‍💻 Author
+
+Dejen Mezgebe
+
+GitHub: [https://github.com/Fortress-io]
+
+## LinkedIn: [https://www.linkedin.com/in/dejen-io/]
+
+Made using React and open weather API.
