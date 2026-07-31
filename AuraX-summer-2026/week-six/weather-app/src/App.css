@@ -33,7 +33,7 @@ body {
   gap: 40px;
 }
 .search-panel {
-  width: min(900px, 100%);
+  width: min(1200px, 55%);
   margin: 50px auto;
   display: flex;
   flex-direction: column;
@@ -67,12 +67,12 @@ body {
   color: #1f2937;
   outline: none;
   height: 50px;
-  font-size: 30px;
+  font-size: 25px;
   font-family: monospace;
 }
 .search-panel input::placeholder {
   color: #6b7280;
-  font-size: 30px;
+  font-size: 25px;
 }
 .search-panel button {
   margin-top: 15px;
@@ -140,6 +140,7 @@ body {
   margin: auto;
 }
 .footer {
+  background-color: #4c4e4f;
   text-align: center;
   padding: 30px 20px;
   color: rgba(255, 255, 255, 0.9);
@@ -160,12 +161,13 @@ body {
     gap: 20px;
     padding: 10px;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
 
   .search-panel {
-    width: 100%;
-    padding: 10px;
-    margin: 10px auto;
+    padding: 20px;
+    margin: 20px auto;
   }
 
   .search-panel h1 {
@@ -173,41 +175,57 @@ body {
   }
 
   .search {
-    flex-direction: column;
+    display: flex;
     gap: 12px;
   }
 
-  .search input,
+  .search input {
+    width: 80%;
+    font-size: 1rem;
+    font-family: monospace;
+  }
   .search button {
-    width: 100%;
-  }
-
-  .weather-card {
-    width: 100%;
-    margin: 0;
-  }
-
-  .city {
-    font-size: 1.2rem;
-    margin-top: 0px;
-  }
-
-  .temperature {
+    width: 20%;
+    height: 40px;
     font-size: 1rem;
   }
 
+  .weather-card {
+    width: min(500px, 95%);
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 18px;
+  }
+  .city {
+    font-size: 1.2rem;
+  }
+
+  .temperature {
+    font-size: 2.5rem;
+  }
+
   .weather-icon {
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
   }
 
   .details p {
-    font-size: 0.35rem;
+    font-size: 16px;
+    margin: 10px 0;
   }
 
   .footer {
     padding: 15px;
-    font-size: 0.95rem;
+    font-size: 0.8rem;
     background-color: #7d8182;
+    margin-top: 20px;
+    font-family:
+      "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+      Arial, sans-serif;
+  }
+  .description,
+  .location,
+  .date {
+    font-size: 0.9rem;
   }
 }
